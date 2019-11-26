@@ -1,6 +1,8 @@
-import base64_encode from encoder.base64
-import ceil from math
+
+import math
 import unittest
+from encoder.main import base64_encode
+
 
 allow_character = set('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/+=')
 tc = unittest.TestCase('__init__')

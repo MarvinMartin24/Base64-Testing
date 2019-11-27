@@ -1,13 +1,9 @@
 
 import math
 import unittest
-import sys
-import os
-
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 
-from base64.base64 import base64_encode, string_to_binary, base64_decode
+from coder.base64 import base64_encode, string_to_binary, base64_decode
 tc = unittest.TestCase('__init__')
 
 

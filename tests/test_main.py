@@ -1,6 +1,7 @@
 
 import math
 import unittest
+sys.path.insert(0, base64)
 
 
 from base64.main import base64_encode, string_to_binary, base64_decode

@@ -39,7 +39,8 @@ def group_bytes6(str):
             list.append(bin[y:y+6])
     return [list,int(math.ceil(nb_bits/6))]
 
-def base64_encode_bin_to_char(list)
+def base64_encode_bin_to_char(list):
+    list2 = []
     for i in range (0, list[1]):
         nb = binary_to_decimal(list[0][i])
         list2.append(character[nb])

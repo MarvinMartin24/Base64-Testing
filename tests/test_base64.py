@@ -5,7 +5,7 @@ import sys
 sys.path.append('path')
 
 
-from base64.main import base64_encode, string_to_binary, base64_decode
+from base64.base64 import base64_encode, string_to_binary, base64_decode
 tc = unittest.TestCase('__init__')
 
 

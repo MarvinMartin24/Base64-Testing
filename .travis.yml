@@ -1,0 +1,17 @@
+language: python
+jobs:
+    - name: "Python 3.7.4 on macOS"
+      os: osx
+sudo: false
+python:
+    - "2.7"
+    - "3.3"
+    - "3.4"
+    - "3.8"
+cache: pip
+# command to install dependencies
+install:
+    - pip install -r requirements.txt
+    - pip install .
+# command to run tests
+script: pytest

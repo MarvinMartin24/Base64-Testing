@@ -1,7 +1,9 @@
 
 import math
 import unittest
-from encoder.main import base64_encode, string_to_binary
+
+
+from base64.main import *
 tc = unittest.TestCase('__init__')
 
 
@@ -29,3 +31,13 @@ def test_bin_utf8():
     tc.assertEqual(len(binary)%8, 0 )
     for bin in binary:
         tc.assertIn(bin, allow_binary)
+
+def test_base64_decode_example():
+    decode = base64_decode("Ki0+RGV2T3BzPC0q")
+    tc.assertEqual(decode, "*->DevOps<-*")
+
+
+def test_base64_encode_to_decode():
+    encode = base64_encode("<azert1AZERT>99")
+    decode = base64_decode(encode)
+    tc.assertEqual(decode, "<azert1AZERT>99")

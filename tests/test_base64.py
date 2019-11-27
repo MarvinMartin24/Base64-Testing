@@ -2,7 +2,9 @@
 import math
 import unittest
 import sys
-sys.path.append('path')
+import os
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 
 from base64.base64 import base64_encode, string_to_binary, base64_decode

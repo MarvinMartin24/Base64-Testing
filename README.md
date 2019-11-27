@@ -1,9 +1,5 @@
-
-# Base64-Testing
-===================
-
-## Badge
 [![Build Status](https://travis-ci.org/MarvinMartin24/Base64-Testing.svg?branch=master)](https://travis-ci.org/MarvinMartin24/Base64-Testing)
+# Base64-Testing
 
 ## Requirements
 Get started with [Python3](https://www.python.org/downloads/) and [PIP3](https://pip.pypa.io/en/stable/installing/)

@@ -3,7 +3,7 @@ import math
 import unittest
 
 
-from base64.main import *
+from base64.main import base64_encode, string_to_binary, base64_decode
 tc = unittest.TestCase('__init__')
 
 

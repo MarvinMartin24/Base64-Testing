@@ -14,10 +14,9 @@ matrix:
       language: shell       # 'language: python' is an error on Travis CI macOS
       before_install:
         - python --version
-        # - pip install -U pip
-        # - python -m pip install --upgrade pip
+        - pip install -U pip
+        - python -m pip install --upgrade pip
         - pip install pytest --user
-      install: pip install ".[test]" --user
       script: python -m pytest
     - name: "Python 3.6.5 on macOS 10.13"
       os: osx
@@ -41,6 +40,4 @@ before_install:
   - python --version
   - pip install -U pip
   - pip install -U pytest
-install:
-  - pip install ".[test]"
 script: pytest
